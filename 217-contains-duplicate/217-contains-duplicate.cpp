@@ -27,6 +27,8 @@ public:
             if(a.second>1) return true;
         }
         return false; */
+        
+    // TC-O(N) SC-O(N) - set has unique numbers thus size will differ if duplicate is present
         unordered_set<int>s;
         for(auto a:nums)s.insert(a);
         if(nums.size()==s.size()) return false;
