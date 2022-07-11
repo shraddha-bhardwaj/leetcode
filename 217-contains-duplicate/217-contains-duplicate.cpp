@@ -21,11 +21,15 @@ public:
         
     //TC- O(N) SC- O(N) - hashmap- unordered map 
       
-    unordered_map<int,int>m;
+    /* unordered_map<int,int>m;
         for(auto a: nums)m[a]++;
         for(auto a: m){
             if(a.second>1) return true;
         }
-        return false;
+        return false; */
+        unordered_set<int>s;
+        for(auto a:nums)s.insert(a);
+        if(nums.size()==s.size()) return false;
+        return true;
     }
 };
