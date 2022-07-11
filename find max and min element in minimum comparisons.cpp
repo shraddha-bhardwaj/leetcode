@@ -16,7 +16,8 @@ int main() {
         else{
         max=a[1];
         min=a[0];
-        i=2;}
+        }
+	i=2;
     }
     else{
         max=a[0];
