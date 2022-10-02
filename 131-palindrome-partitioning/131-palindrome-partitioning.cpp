@@ -8,7 +8,7 @@ public:
 
     }
     
-    void helper(string s, int ind, vector<string>&v, vector<vector<string>>&ans){
+    void helper(string &s, int ind, vector<string>&v, vector<vector<string>>&ans){
         if(ind==s.length()){
             ans.push_back(v);
             return;
